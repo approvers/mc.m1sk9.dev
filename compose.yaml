@@ -3,6 +3,7 @@ services:
     image: itzg/minecraft-server
     ports:
       - "26606:26606"
+      - "8804:8804"
     tty: true
     stdin_open: true
     environment:
