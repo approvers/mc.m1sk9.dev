@@ -1,0 +1,27 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - "26606:26606"
+    tty: true
+    stdin_open: true
+    environment:
+      - EULA=TRUE
+      - VERSION=1.20.4
+      - TYPE=PAPER
+      # override configuration
+      - MODE=survival
+      - SERVER_NAME=mc.m1sk9.dev
+      - SERVER_PORT=26606
+      - MOTD="§6Approvers Minecraft Server (m1sk9 server)"
+      - PVP=true
+      - DIFFICULTY=normal
+      - MAX_PLAYERS=10
+      - ENABLE_WHITELIST=true
+      - WHITELIST_FILE=/whitelist.json
+      - OPS_FILE=/ops.json
+      # override configuration file
+    volumes:
+      - ./whitelist.json:/whitelist.json
+      - ./ops.json:/ops.json
+      - ./mc-data/1.20.4:/data
