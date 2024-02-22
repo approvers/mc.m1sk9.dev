@@ -1,5 +1,5 @@
 exec:
-	docker exec -i mc rcon-cli
+	docker exec -i approvers-mcm1sk9dev-mc-1 rcon-cli
 
 up:
 	docker compose up -d
