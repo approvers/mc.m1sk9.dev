@@ -13,7 +13,7 @@ services:
       # override configuration
       - MODE=survival
       - SERVER_NAME=mc.m1sk9.dev
-      - SERVER_PORT=26606
+      - SERVER_PORT=26607
       - MOTD="§6Approvers Minecraft Server (m1sk9 server)"
       - PVP=true
       - DIFFICULTY=normal
