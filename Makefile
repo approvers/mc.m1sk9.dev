@@ -6,6 +6,3 @@ up:
 
 down:
 	docker compose down
-
-destory:
-	docker compose down --rmi all --volumes --remove-orphans
